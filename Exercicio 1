@@ -1,0 +1,98 @@
+#include <stdio.h>
+#include <locale.h>
+
+main()
+{
+	
+	setlocale(LC_ALL,"Portuguese");
+	
+	int prato, sobremesa, bebida;
+	int ent1, ent2, ent3;
+	int cal1, cal2, cal3, soma;
+	
+	printf("Insira o número do prato: ");
+	scanf("%i", &prato);
+	printf("Insira o número da sobremesa: ");
+	scanf("%i", &sobremesa);
+	printf("Insira o número da bebida: ");
+	scanf("%i", &bebida);
+	printf("\n\n");
+	
+	switch (prato){
+		
+		case 1:
+			cal1 = 180;
+			printf("Prato: Vegetariano. \n");
+			printf ("Calorias: 180 \n");
+		break;
+		case 2: 
+			cal1 = 230;
+			printf("Prato: Peixe. \n");
+			printf ("Calorias: 230 \n");	
+		break;
+		case 3: 
+			cal1 = 250;
+			printf("Prato: Frango. \n");
+			printf ("Calorias: 250 \n");	
+		break;
+		case 4: 
+			cal1 = 350;
+			printf("Prato: Carne. \n");
+			printf ("Calorias: 350 \n");
+		break;
+		default:
+			printf("Prato inválido. \n");
+	}
+	switch (sobremesa){
+		
+		case 1:
+			cal2 = 75;
+			printf("Sobremesa: Abacaxi. \n");
+			printf ("Calorias: 75 \n");
+		break;
+		case 2: 
+			cal2 = 110;
+			printf("Sobremesa: Sorvete Diet. \n");
+			printf ("Calorias: 110 \n");	
+		break;
+		case 3: 
+			cal2 = 170;
+			printf("Sobremesa: Mouse Diet. \n");
+			printf ("Calorias: 170 \n");	
+		break;
+		case 4: 
+			cal2 = 200;
+			printf("Sobremesa: Mouse de Chocolate. \n");
+			printf ("Calorias: 200 \n");
+		break;
+		default:
+			printf("Sobremesa inválida. \n");
+	}
+	switch (bebida){
+		
+		case 1:
+			cal3 = 20;
+			printf("Bebida: Chá. \n");
+			printf ("Calorias: 20 \n");
+		break;	
+		case 2: 
+			cal3 = 70;
+			printf("Bebida: Suco de Laranja. \n");
+			printf ("Calorias: 70 \n");	
+		break;
+		case 3: 
+			cal3 = 100;
+			printf("Bebida: Suco de Melão. \n");
+			printf ("Calorias: 100 \n");	
+		break;
+		case 4: 
+			cal3 = 65;
+			printf("Bebida: Refrigerante Diet. \n");
+			printf ("Calorias: 65 \n");
+		break;
+		default:
+			printf("Bebida inválida. \n");
+	}
+	soma = cal1 + cal2 + cal3;
+	printf("\n\nQuantidade total de calorias: %i \n", soma);
+}
