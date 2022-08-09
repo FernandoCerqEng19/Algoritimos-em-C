@@ -1,0 +1,61 @@
+#include <locale.h> 
+#include <stdio.h>
+
+main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+	
+	//Declaração de variáveis
+	int num;
+	num = 1;
+	//Entrada, Operações e Saída de Dados
+	while (num > 0){
+		printf("Insira um número entre 1 e 12:\n");
+		scanf("%d", &num);
+		switch (num){
+			case 1 :
+				printf("Janeiro.\n\n");
+			break;		
+			case 2 :
+				printf("Fevereiro.\n\n");
+			break;
+			case 3 :
+				printf("Março.\n\n");
+			break;
+			case 4 :
+				printf("Abril.\n\n");
+			break;	
+			case 5 :
+				printf("Maio.\n\n");
+			break;
+			case 6 :
+				printf("Junho.\n\n");
+			break;
+			case 7 :
+				printf("Julho.\n\n");
+			break;
+			case 8 :
+				printf("Agosto.\n\n");
+			break;
+			case 9 :
+				printf("Setembro.\n\n");
+			break;
+			case 10 :
+				printf("Outubro.\n\n");
+			break;
+			case 11 :
+				printf("Novembro.\n\n");
+			break;
+			case 12 :
+				printf("Dezembro. \n\n");
+			break;
+			default :
+				if (num == 0){
+					printf("Número inválido. Encerrando código.");
+				}
+				else{
+					printf("Número inválido, tente novamente:\n\n");
+				}	
+		}
+	}
+}
