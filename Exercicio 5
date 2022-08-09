@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+
+main()
+{
+
+setlocale(LC_ALL,"Portuguese");
+
+//Declaração de Variáveis
+int num, i, soma;
+i = 1;
+soma = 0;
+
+//Entrada de Dados
+while (i <= 10)
+{
+	printf("Insira um número:\n");
+	scanf("%i", &num);
+	if (num < 40)
+	{
+		soma = soma + num;
+	}
+	i = i + 1;
+}
+printf("A soma de números informados inferiores a 40 é: %i \n", soma);	
+}
