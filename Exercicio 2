@@ -1,0 +1,23 @@
+#include <locale.h> 
+#include <stdio.h>
+
+main()
+{
+	
+	setlocale(LC_ALL, "Portuguese");
+	
+	//Declaração de variáveis
+	int num, soma, contador;
+	float div;
+	soma = 0;
+	contador = 0;
+	
+	//Operações e Saída de Dados
+	for (num = 15; num <= 100; ++num)
+	{
+		soma = soma + num;
+		contador = contador + 1;
+	}
+	div = soma/contador;
+	printf("A média aritimética dos números entre 15 e 100 é: %f \n", div);
+}
