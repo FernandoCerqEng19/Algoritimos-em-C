@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <locale.h>
+
+main()
+{
+
+setlocale(LC_ALL,"Portuguese");
+
+//Declaração de Variáveis
+int num, i, contador, contador2;
+i = 1;
+contador = 0;
+
+//Entrada de Dados
+while (i <= 10)
+{
+	printf("Insira um número:\n");
+	scanf("%i", &num);
+	if (num >= 10 && num <= 20)
+	{
+		contador = contador + 1;
+	}
+	i = i + 1;
+}
+printf("A quantidade de números informados entre 10 e 20 é: %i \n", contador);
+contador2 = 10 - contador;
+printf("A quantidade de números informados que não estão entre 10 e 20 é: %i \n", contador2);	
+}
